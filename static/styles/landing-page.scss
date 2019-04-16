@@ -3852,9 +3852,9 @@ nav ul li.active::after {
         float: right;
     }
 
-    .portico-header .content > ul::before {
-        content: "Zulip";
-        display: block;
+    .sidenav-logo {
+        display: flex;
+        align-items: center;
         margin-top: 20px;
         padding-top: 5px;
         margin-left: 10px;
@@ -3865,10 +3865,12 @@ nav ul li.active::after {
         font-size: 1.5rem;
         text-align: right;
         color: hsl(0, 0%, 27%);
+    }
 
-        background-size: 40px auto;
-        background-image: url(/static/images/zulip-logo.svg);
-        background-repeat: no-repeat;
+    .sidenav-logo img {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
     }
 
     .portico-header .dropdown ul {
